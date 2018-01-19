@@ -1,0 +1,51 @@
+.schedule {
+  .slot {
+    display: flex;
+    flex-wrap: nowrap;
+
+    border: solid .1rem @core-light-color;
+    border-radius: @border-radius;
+
+    margin-bottom: @layout-margin/2;
+
+    .time, .event {
+      padding: @layout-padding/2;
+    }
+
+    .time {
+      flex: none;
+      width: 9rem;
+
+      background-color: @core-light-color;
+      color: @core-secondary-color;
+
+      text-align: right;
+      font-weight: bold;
+    }
+
+    .event {
+      flex: 1 0 0;
+
+      .title {
+        font-weight: bold;
+      }
+    }
+
+    &:hover {
+      background: fade(@core-light-color, 10%)
+    }
+
+    &.active {
+      border-width: .3rem;
+    }
+
+    &.disabled,
+    &:disabled {
+      border-color: darken(@core-light-color, 25%);
+      color: darken(@core-light-color, 25%);
+      .time {
+        background-color: darken(@core-light-color, 25%);
+      }
+    }
+  }
+}

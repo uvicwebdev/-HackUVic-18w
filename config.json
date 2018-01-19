@@ -1,0 +1,38 @@
+{
+  "title": "HackUVic",
+  "description": "The University of Victoria's Hackathon, hosted in Victoria, British Columbia.",
+  "host": "17w.hackuvic.com",
+  "tracking_id": "UA-71953845-1",
+  "themecolor": "#A1ABBB",
+  "social_links": [
+    {
+      "href": "http://m.me/UVicWebDev",
+      "tooltip": "Got a question?",
+      "icon": "social-facebook-messenger-bubble"
+    },
+    {
+      "href": "https://twitter.com/hackuvic/",
+      "tooltip": "Tweet us",
+      "icon": "social-twitter"
+    },
+    {
+      "href": "https://www.facebook.com/UVicWebDev/",
+      "tooltip": "Like us",
+      "icon": "social-facebook"
+    },
+    {
+      "href": "https://www.facebook.com/events/577812505737938/",
+      "tooltip": "RSVP on Facebook",
+      "icon": "calendar"
+    },
+    {
+      "href": "http://github.com/UVicWebDev",
+      "tooltip": "Star us",
+      "icon": "social-github"
+    }
+  ],
+  "contact": {
+    "chat_url": "http://m.me/UVicWebDev",
+    "email": "hello@hackuvic.com"
+  }
+}

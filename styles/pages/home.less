@@ -1,0 +1,95 @@
+.home {
+  background: linear-gradient(@core-secondary-color, @core-color);
+
+  .content {
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  color: @grey-white;
+
+  p, li {
+     & > a {
+      color: mix(@grey-white, @core-color, 80%);
+      &:hover {
+        color: mix(@grey-white, @core-color, 60%);
+      }
+    }
+  }
+
+
+
+  .btn {
+    background: @grey-light;
+    border-color: darken(@grey-light, 5%);
+    color: @core-secondary-color;
+    &:focus {
+      background: darken(@grey-light, 4%);
+      border-color: darken(@grey-light, 10%);
+      color: @core-secondary-color;
+    }
+    &:hover {
+      background: darken(@grey-light, 6%);
+      border-color: darken(@grey-light, 15%);
+      color: @core-secondary-color;
+    }
+    &:active,
+    &.active {
+      background: darken(@grey-light, 8%);
+      border-color: darken(@grey-light, 15%);
+      color: @core-secondary-color;
+    }
+    &.loading {
+      &::after {
+        border-color: @core-color;
+        border-right-color: transparent;
+        border-top-color: transparent;
+      }
+    }
+
+    &.btn-link {
+      color: @grey-white;
+      background: transparent;
+      border-color: transparent;
+      &:hover {
+        color: lighten(@core-link-color, 60%);
+        background: fade(@grey-white, 20%);
+      }
+    }
+  }
+
+  #mlh-trust-badge {
+    display:block;
+    max-width:100px;
+    max-width: 100%;
+    min-width:60px;
+    position: absolute;
+    right:50px;
+    top:0;
+    width:10%;
+    z-index:10000;
+    img {
+      width: 100%;
+    }
+  }
+
+  .hero {
+    text-align: center;
+
+    h1 {
+      font-weight: bold;
+      line-height: 0.8;
+    }
+
+    small {
+      font-weight: normal;
+      font-size: 45%;
+    }
+
+  }
+}
