@@ -52,7 +52,11 @@ export default class Home extends Component {
                 </small>
                 <br /><br />
                 <a className="btn btn-hero btn-fat" href="https://hackuvic-17w.devpost.com/submissions" target="_blank" rel="noopener noreferrer">
-                  <Icon name="code-outline" size={1.3} /> See the projects on Devpost
+                  <Icon name="code-outline" size={1.3} /> Sign Up
+                </a>
+                <br /><br />
+                <a className="btn btn-hero btn-fat" href="https://hackuvic-17w.devpost.com/submissions" target="_blank" rel="noopener noreferrer">
+                  <Icon name="code-outline" size={1.3} /> See last year's projects on Devpost
                 </a>
               </h1>
             </div>
