@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The HackUVic Website",
   "scripts": {
-    "start": "webpack -d --watch & live-server --entry-file=404.html",
+    "start": "webpack -d --watch & live-server --watch=components --entry-file=404.html",
     "build": "webpack -p",
     "deploy": "bash ./.deploy.sh",
     "push": "git checkout deploy; git merge develop; git push; git checkout develop"
@@ -29,8 +29,9 @@
     "babel-core": "^6.9.1",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.5.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-1": "^6.5.0",
     "css-loader": "^0.25.0",
     "eslint": "^3.2.2",
@@ -45,7 +46,7 @@
     "fontgen-loader": "^0.2.1",
     "html-webpack-plugin": "^2.24.1",
     "html-webpack-template": "^5.5.0",
-    "image-webpack-loader": "^3.0.0",
+    "image-webpack-loader": "^3.6.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "less-plugin-autoprefix": "^1.5.1",
@@ -55,6 +56,6 @@
     "react-scroll": "^1.4.4",
     "string-replace-loader": "^1.0.5",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.1"
+    "webpack": "3.10.0"
   }
 }
