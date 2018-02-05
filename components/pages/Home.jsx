@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+import Config from 'Config';
 
 import Icon from 'parts/Icon';
 import Navbar from 'parts/Navbar';
@@ -16,8 +19,10 @@ import Sponsors from 'sections/Sponsors';
 import Contact from 'sections/Contact';
 
 export default class Home extends Component {
-  // static propTypes = {
-  // }
+
+  static propTypes = {
+    location: PropTypes.object,
+  }
 
   constructor(props) {
     super(props);
@@ -27,6 +32,23 @@ export default class Home extends Component {
 
   // static defaultProps = {
   // }
+
+  componentWillMount() {
+    if (this.props.location.query.done && window.opener) {
+      window.opener.location = `http://${Config.host}/?signednup=1`;
+      window.close();
+    }
+  }
+
+
+
+  openSignUp = () => {
+    const uri = `http%3A%2F%2F${Config.host}%2F%3Fdone%3D1`
+    window.open(
+      `${Config.my_mlh.url_base}?client_id=${Config.my_mlh.client_id}&redirect_uri=${uri}&response_type=token`,
+      'newwindow', 'width=500, height=600'
+    ); return false;
+  }
 
   render() {
     return (
@@ -53,9 +75,9 @@ export default class Home extends Component {
                 <br /><br /><br /><br />
                 <div className="columns flex-center">
                   <div className="col-12">
-                    <a className="btn btn-hero btn-fat" href="https://my.mlh.io/oauth/authorize?client_id=b90ed1c8f31afb88d6e07754da1a5188eb9deceb2a9d61d95d560ba8ecd5d435&redirect_uri=https%3A%2F%2F18w.hackuvic.com&response_type=token" target="_blank" rel="noopener noreferrer">
-                      <Icon name="code-outline" size={1.3} /> Sign Up with MLH
-                    </a>
+                    <button className="btn btn-hero btn-fat" onClick={this.openSignUp}>
+                      <Icon name="ticket" size={1.3} /> Sign Up with MyMLH
+                    </button>
                   </div>
                   <div className="col-12">
                     <a className="btn btn-link" href="https://hackuvic-17w.devpost.com/submissions" target="_blank" rel="noopener noreferrer">
