@@ -27,7 +27,7 @@ export default {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel',
+        loader: 'babel-loader',
         query: {
           presets: ['react', 'es2015', 'stage-0'],
         },
@@ -35,56 +35,47 @@ export default {
       {
         test: /\.less$/,
         loader: ExtractTextPlugin.extract(
-          'css?sourceMap!' +
-          `less?${production ? 'compress' : 'sourceMap'}`
+          'css-loader?sourceMap!' +
+          `less-loader?${production ? 'compress' : 'sourceMap'}`
         ),
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
-          'file?name=[name].[ext]',
-          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false',
+          'file-loader?name=[name].[ext]',
+          'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false',
         ],
       },
       {
         test: /\.(pdf)$/i,
         loaders: [
-          'file?name=[name].[ext]',
+          'file-loader?name=[name].[ext]',
         ],
       },
       {
         test: /\.font\.?(js|json)$/,
         loader: ExtractTextPlugin.extract(
-          'css?sourceMap!' +
-          `less?${production ? 'compress' : 'sourceMap'}!` +
-          'fontgen?fileName=[fontname][ext]',
+          'css-loader?sourceMap!' +
+          `less-loader?${production ? 'compress' : 'sourceMap'}!` +
+          'fontgen-loader?fileName=[fontname][ext]',
         ),
       },
       {
         test: /.(eot|ttf|woff|woff2)$/,
-        loaders: ['file?name=[name].[ext]'],
+        loaders: ['file-loader?name=[name].[ext]'],
       },
     ],
-  },
-  lessLoader: {
-    lessPlugins: (() => [
-      new LessPluginAutoPrefix({ browsers: ['last 2 versions'] }),
-    ].concat(
-      production ? [
-        new LessPluginCleanCSS({ advanced: true, keepSpecialComments: 1 }),
-      ] : []
-    ))(),
   },
   externals: {
     Config: JSON.stringify(Configuration),
   },
   resolve: {
-    modulesDirectories: [
+    modules: [
       __dirname,
       'node_modules',
       'components',
     ],
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['.js', '.jsx'],
   },
   plugins: (() => [
     new ExtractTextPlugin('styles.css'),
