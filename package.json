@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "The HackUVic Website",
   "scripts": {
-    "start": "webpack -d --watch & live-server --watch=components --entry-file=404.html",
-    "build": "webpack -p",
-    "deploy": "bash ./.deploy.sh",
-    "push": "git checkout deploy; git merge develop; git push; git checkout develop"
+    "start": "webpack -d --watch & npm run serve",
+    "build": "webpack",
+    "build-production": "webpack -p",
+    "serve": "(cd dist/; live-server --watch=../components --entry-file=404.html)",
+    "clean": "rm -rf dist/",
+    "deploy": "npm run clean; npm build production; gh-pages -d dist/"
   },
   "repository": {
     "type": "git",

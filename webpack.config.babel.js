@@ -20,7 +20,7 @@ export default {
   output: {
     path: `${__dirname}/dist`,
     filename: 'bundle.js',
-    publicPath: '/dist/',
+    publicPath: '/',
   },
   module: {
     loaders: [
@@ -43,7 +43,7 @@ export default {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [
           'file-loader?name=[name].[ext]',
-          'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false',
+          'image-webpack-loader?bypassOnDebug&interlaced=false',
         ],
       },
       {
@@ -88,7 +88,7 @@ export default {
     new HtmlWebpackPlugin({
       inject: false,
       template: HtmlWebpackTemplate,
-      filename: '../index.html',
+      filename: 'index.html',
       appMountId: 'root',
       baseHref: production ? `http://${Configuration.host}` : false,
       mobile: true,
@@ -98,14 +98,13 @@ export default {
         'og:title': Configuration.title,
         'og:description': Configuration.description,
         'og:type': 'website',
-        'og:image': `http://${Configuration.host}/dist/icons/apple-touch-startup-image-750x1294.png`,
+        'og:image': `http://${Configuration.host}/icons/apple-touch-startup-image-750x1294.png`,
       },
       links: [
       ],
       inlineManifestWebpackName: 'webpackManifest',
       scripts: [
-        '/dist/page.js',
-        '/dist/typeform.js',
+        '/page.js',
       ],
     }),
   ].concat(
@@ -124,9 +123,7 @@ export default {
           comments: false,
         },
       }),
-      new webpack.optimize.DedupePlugin(),
       new webpack.optimize.AggressiveMergingPlugin(),
-      new webpack.optimize.OccurenceOrderPlugin(),
     ] : [
       // Development only plugins
       /* Nothing */

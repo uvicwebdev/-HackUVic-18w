@@ -58,7 +58,7 @@ export default class Home extends Component {
                     </a>
                   </div>
                   <div className="col-12">
-                    <a className="link" href="https://hackuvic-17w.devpost.com/submissions" target="_blank" rel="noopener noreferrer">
+                    <a className="btn btn-link" href="https://hackuvic-17w.devpost.com/submissions" target="_blank" rel="noopener noreferrer">
                       View Last Year's Projects
                     </a>
                   </div>
