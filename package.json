@@ -8,7 +8,7 @@
     "build-production": "webpack -p",
     "serve": "(cd dist/; live-server --watch=../components --entry-file=404.html)",
     "clean": "rm -rf dist/",
-    "deploy": "npm run clean; npm build production; gh-pages -d dist/"
+    "deploy": "npm run clean; npm run build-production; gh-pages -d dist/"
   },
   "repository": {
     "type": "git",
@@ -46,6 +46,7 @@
     "favicons-webpack-plugin": "0.0.7",
     "file-loader": "^0.9.0",
     "fontgen-loader": "^0.2.1",
+    "gh-pages": "^1.1.0",
     "html-webpack-plugin": "^2.24.1",
     "html-webpack-template": "^5.5.0",
     "image-webpack-loader": "^3.6.0",
