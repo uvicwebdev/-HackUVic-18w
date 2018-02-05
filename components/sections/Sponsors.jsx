@@ -132,7 +132,7 @@ export default class Sponsors extends Component {
     return (
       <section id="sponsors">
         <div className="container">
-          <div className="columns cols-md flex-center">
+          <div className="columns cols-md">
             <div className="column col-12">
               <h2>Sponsors</h2>
             </div>
@@ -150,16 +150,22 @@ export default class Sponsors extends Component {
                 </div>
               </div>
             )*/}
-            <div className="columns">
-              <div className="column col-sm-12 col-6">
-                <a className="btn btn-fat" href={sponsorPackage} target="_blank" rel="noopener noreferrer">
-                  <Icon name="gift" size={1.3} /> Get the sponsorship package
-                </a>
-              </div>
-              <div className="column col-sm-12 col-6">
-                <a className="btn btn-primary btn-block btn-fat" href={`mailto:${Config.contact.email}`} target="_blank" rel="noopener noreferrer">
-                  <Icon name="mail" size={1.3} /> Contact the organizers
-                </a>
+            <div className="column col-12">
+              <div className="flex flex-center fill-xs">
+                <div className="text-center">
+                  <div className="columns">
+                    <div className="column col-sm-12 col-6">
+                      <a className="btn btn-fat" href={sponsorPackage} target="_blank" rel="noopener noreferrer">
+                        <Icon name="gift" size={1.3} /> Get the sponsorship package
+                      </a>
+                    </div>
+                    <div className="column col-sm-12 col-6">
+                      <a className="btn btn-primary btn-block btn-fat" href={`mailto:${Config.contact.email}`} target="_blank" rel="noopener noreferrer">
+                        <Icon name="mail" size={1.3} /> Contact the organizers
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
