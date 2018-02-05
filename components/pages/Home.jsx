@@ -51,7 +51,7 @@ export default class Home extends Component {
                   March 11th and 12th, 2017 at the University of Victoria
                 </small>
                 <br /><br />
-                <a className="btn btn-hero btn-fat" href="https://hackuvic-17w.devpost.com/submissions" target="_blank" rel="noopener noreferrer">
+                <a className="btn btn-hero btn-fat" href="https://my.mlh.io/oauth/authorize?client_id=b90ed1c8f31afb88d6e07754da1a5188eb9deceb2a9d61d95d560ba8ecd5d435&redirect_uri=https%3A%2F%2F18w.hackuvic.com&response_type=token" target="_blank" rel="noopener noreferrer">
                   <Icon name="code-outline" size={1.3} /> Sign Up
                 </a>
                 <br /><br />
