@@ -16,8 +16,9 @@ import starfishLogo from 'img/Sponsors/starfish-logo.svg';
 import stemboltLogo from 'img/Sponsors/stembolt-logo.svg';
 import uvicLogo from 'img/Sponsors/uvic-logo.svg';
 import viatecLogo from 'img/Sponsors/viatec-logo.svg';
+import Config from 'Config';
 
-import sponsorPackage from 'docs/HackUVic2017-Sponsorship.pdf';
+import sponsorPackage from 'docs/HackUVic-Sponsorship-Package-2018.pdf';
 
 export default class Sponsors extends Component {
   static propTypes = {
@@ -131,11 +132,11 @@ export default class Sponsors extends Component {
     return (
       <section id="sponsors">
         <div className="container">
-          <div className="columns cols-md">
+          <div className="columns cols-md flex-center">
             <div className="column col-12">
               <h2>Sponsors</h2>
             </div>
-            { sponsors.map((section) =>
+            {/* sponsors.map((section) =>
               <div key={section.title} className="column col-12">
                 <h3 className="text-center">{section.title}</h3>
                 <div className="columns col-center flex-align-center">
@@ -148,16 +149,17 @@ export default class Sponsors extends Component {
                   )}
                 </div>
               </div>
-            )}
-            <div className="column col-12">
-              <div className="flex flex-center">
-                <div className="text-center">
-                  <h4>Want your logo up here?</h4>
-                  <br />
-                  <a className="btn btn-fat" href={sponsorPackage} target="_blank" rel="noopener noreferrer">
-                    <Icon name="gift" size={1.3} /> Get the sponsorship package
-                  </a>
-                </div>
+            )*/}
+            <div className="columns">
+              <div className="column col-sm-12 col-6">
+                <a className="btn btn-fat" href={sponsorPackage} target="_blank" rel="noopener noreferrer">
+                  <Icon name="gift" size={1.3} /> Get the sponsorship package
+                </a>
+              </div>
+              <div className="column col-sm-12 col-6">
+                <a className="btn btn-primary btn-block btn-fat" href={`mailto:${Config.contact.email}`} target="_blank" rel="noopener noreferrer">
+                  <Icon name="mail" size={1.3} /> Contact the organizers
+                </a>
               </div>
             </div>
           </div>

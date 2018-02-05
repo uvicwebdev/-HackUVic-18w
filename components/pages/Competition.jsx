@@ -1,8 +1,5 @@
-
 import React, { Component } from 'react';
-
 import Navbar from 'parts/Navbar';
-
 import Judging from 'sections/Judging';
 import Prizes from 'sections/Prizes';
 
@@ -15,9 +12,6 @@ export default class Competition extends Component {
     this.state = {
     };
   }
-
-  // static defaultProps = {
-  // }
 
   render() {
     return (
