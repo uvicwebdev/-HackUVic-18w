@@ -21,6 +21,7 @@ import ExampleTwoDeepComponent from 'pages/ExampleTwoDeepComponent';
 
 import 'file-loader?name=page.js!page.js';
 import 'file-loader?name=404.html!404.html';
+import 'file-loader?name=CNAME!CNAME';
 import 'styles/styles.less';
 import 'font/hackicon.font';
 
