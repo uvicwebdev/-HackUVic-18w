@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Config from 'Config';
-
 import Navbar from 'parts/Navbar';
 import { Link } from 'react-router';
 
@@ -51,9 +49,7 @@ export default class Competition extends Component {
             </section>
 
             <section className="col-12">
-              <div className="btn btn-primary btn-block btn-fat">
-                <Link to="/">Back to HackUVic Homepage</Link>
-              </div>
+              <Link className="btn btn-primary btn-block btn-fat" to="/">Back to HackUVic Homepage</Link>
             </section>
           </div>
         </div>
