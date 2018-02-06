@@ -1,15 +1,28 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+import Config from 'Config';
+
 import Navbar from 'parts/Navbar';
 import { Link } from 'react-router';
 
 export default class Competition extends Component {
-  // static propTypes = {
-  // }
+
+  static propTypes = {
+    location: PropTypes.object,
+  }
 
   constructor(props) {
     super(props);
     this.state = {
     };
+  }
+
+  componentWillMount() {
+    if (window.opener) {
+      window.opener.location = window.location;
+      window.close();
+    }
   }
 
   render() {

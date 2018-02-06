@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 import Config from 'Config';
 
@@ -20,10 +19,6 @@ import Contact from 'sections/Contact';
 
 export default class Home extends Component {
 
-  static propTypes = {
-    location: PropTypes.object,
-  }
-
   constructor(props) {
     super(props);
     this.state = {
@@ -32,15 +27,6 @@ export default class Home extends Component {
 
   // static defaultProps = {
   // }
-
-  componentWillMount() {
-    if (this.props.location.query.done && window.opener) {
-      window.opener.location = `http://${Config.host}/?signednup=1`;
-      window.close();
-    }
-  }
-
-
 
   openSignUp = () => {
     const uri = `http%3A%2F%2F${Config.host}%2Fdone`
