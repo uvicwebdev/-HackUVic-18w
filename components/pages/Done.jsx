@@ -26,6 +26,9 @@ export default class Competition extends Component {
 
             <section className="columns col-12 flex flex-center">
               <h3 className="text-center">Here's what you need to know.</h3>
+            </section>
+
+            <section className="columns col-12 flex flex-center">
               <ul className="col-sm-12 col-6">
                 <li>Registration opens at 9am on Saturday, March 10th, on the 1st floor of ECS.</li>
                 <li>Opening ceremonies are being held at 10am in ECS 125 - Make sure you're there!</li>
