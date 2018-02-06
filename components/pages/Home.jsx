@@ -43,7 +43,7 @@ export default class Home extends Component {
 
 
   openSignUp = () => {
-    const uri = `http%3A%2F%2F${Config.host}%2F%3Fdone%3D1`
+    const uri = `http%3A%2F%2F${Config.host}%2Fdone`
     window.open(
       `${Config.my_mlh.url_base}?client_id=${Config.my_mlh.client_id}&redirect_uri=${uri}&response_type=token`,
       'newwindow', 'width=500, height=600'
