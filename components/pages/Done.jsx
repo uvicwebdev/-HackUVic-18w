@@ -43,7 +43,7 @@ export default class Competition extends Component {
               <ul className="col-sm-12 col-6">
                 <li>Registration opens at 9am on Saturday, March 10th, on the 1st floor of ECS.</li>
                 <li>Opening ceremonies are being held at 10am in ECS 125 - Make sure you're there!</li>
-                <li>We'll take care of lunch and dinner on Saturday, and we'll serve breakfast, lunch, and dinner on Sunday.</li>
+                <li>We'll take care of lunch and dinner on Saturday, and we'll serve breakfast on Sunday.</li>
                 <li>Coffee and other refreshments will be provided throughout the event.</li>
               </ul>
             </section>
