@@ -25,6 +25,11 @@
       "icon": "social-facebook"
     },
     {
+      "href": "https://www.facebook.com/events/199352873978987/",
+      "tooltip": "RSVP on Facebook",
+      "icon": "calendar"
+    },
+    {
       "href": "http://github.com/UVicWebDev",
       "tooltip": "Star us",
       "icon": "social-github"
