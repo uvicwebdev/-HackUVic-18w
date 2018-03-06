@@ -35,6 +35,16 @@ export default class Sponsors extends Component {
             image: uvicLogo,
           },
           {
+            title: 'Major League Hacking',
+            href: 'https://mlh.io/',
+            image: mlhLogo,
+          }
+        ],
+      },
+      {
+        title: 'Sponsors',
+        orgs: [
+          {
             title: 'Send With Us',
             href: 'https://sendwithus.com/',
             image: swuLogo,
@@ -58,12 +68,7 @@ export default class Sponsors extends Component {
             title: 'Launchaco',
             href: 'https://launchaco.com/',
             image: launchacoLogo,
-          },
-          {
-            title: 'Major League Hacking',
-            href: 'https://mlh.io/',
-            image: mlhLogo,
-          },
+          }
         ],
       },
     ];
