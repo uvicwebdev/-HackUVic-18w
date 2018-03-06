@@ -4,6 +4,11 @@ import Icon from 'parts/Icon';
 
 import mlhLogo from 'img/Sponsors/mlh-logo.svg';
 import uvicLogo from 'img/Sponsors/uvic-logo.svg';
+import freshworksLogo from 'img/Sponsors/freshworks-logo.svg';
+import swuLogo from 'img/Sponsors/sendwithus-logo.svg';
+import starfishLogo from 'img/Sponsors/starfish-logo.svg';
+import workdayLogo from 'img/Sponsors/workday-logo.svg';
+import launchacoLogo from 'img/Sponsors/launchaco-logo.svg';
 import Config from 'Config';
 
 import sponsorPackage from 'docs/HackUVic-Sponsorship-Package-2018.pdf';
@@ -28,6 +33,31 @@ export default class Sponsors extends Component {
             title: 'University of Victoria',
             href: 'https://www.uvic.ca/',
             image: uvicLogo,
+          },
+          {
+            title: 'Send With Us',
+            href: 'https://sendwithus.com/',
+            image: swuLogo,
+          },
+          {
+            title: 'Workday',
+            href: 'https://workday.com/',
+            image: workdayLogo,
+          },
+          {
+            title: 'Freshworks',
+            href: 'https://freshworks.com/',
+            image: freshworksLogo,
+          },
+          {
+            title: 'Starfish Medical',
+            href: 'https://mlh.io/',
+            image: starfishLogo,
+          },
+          {
+            title: 'Launchaco',
+            href: 'https://launchaco.com/',
+            image: launchacoLogo,
           },
           {
             title: 'Major League Hacking',
