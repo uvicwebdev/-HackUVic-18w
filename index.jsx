@@ -14,6 +14,7 @@ import Config from 'Config';
 import App from 'App';
 import Home from 'pages/Home';
 import Competition from 'pages/Competition';
+import Schedule from 'pages/Schedule';
 import Done from 'pages/Done';
 import PageNotFound from 'pages/PageNotFound';
 
@@ -33,6 +34,8 @@ const routes = (
   <Route path="/" mapMenuTitle="Home" component={App}>
     <IndexRoute component={Home} />
     <Route path="competition" mapMenuTitle="Competition" component={Competition} />
+
+    <Route path="schedule" mapMenuTitle="Schedule" component={Schedule} />
 
     <Route path="done" mapMenuTitle="Done" component={Done} />
 

@@ -76,6 +76,7 @@ export default class Home extends Component {
           </div>
           {/* Sections */}
           <About />
+          <Schedule />
           <Sponsors />
           <Contact />
         </main>

@@ -17,16 +17,16 @@ export default class Schedule extends Component {
   render() {
     const schedule = [
       {
-        time: '2017-03-11 09:00',
+        time: '2018-03-10 09:00',
         events: [
           {
-            title: 'Check in',
+            title: 'Registration',
             location: 'Atrium',
           },
         ],
       },
       {
-        time: '2017-03-11 10:00',
+        time: '2018-03-10 10:00',
         events: [
           {
             title: 'Opening Ceremonies',
@@ -34,56 +34,40 @@ export default class Schedule extends Component {
           },
         ],
       },
-      { time: '2017-03-11 11:00', events: [] },
+      { time: '2018-03-10 11:00', events: [] },
       {
-        time: '2017-03-11 12:00',
+        time: '2018-03-10 12:00',
+        events: [
+          {
+            title: 'Hacking Starts',
+          }
+        ],
+      },
+      { time: '2018-03-10 12:00', events: [] },
+      {
+        time: '2018-03-10 13:00',
         events: [
           {
             title: 'Lunch',
             location: 'Atrium',
-          },
-          {
-            title: 'Hacking Starts',
-          },
+          }
         ],
       },
-      { time: '2017-03-11 12:00', events: [] },
       {
-        time: '2017-03-11 13:00',
+        time: '2018-03-10 14:00',
         events: [
           {
             title: 'Hackthon 101',
             location: 'ECS 124',
-          },
-          {
-            title: 'Team Formation',
-            location: 'ECS 124',
-          },
-        ],
+          }
+        ]
       },
-      { time: '2017-03-11 14:00', events: [] },
+      { time: '2018-03-10 15:00', events: [] },
+      { time: '2018-03-10 16:00', events: [] },
+      { time: '2018-03-10 17:00', events: [] },
+      { time: '2018-03-10 18:00', events: [] },
       {
-        time: '2017-03-11 15:00',
-        events: [
-          {
-            title: 'GitHub Pages Workshop',
-            location: 'ECS 124',
-          },
-        ],
-      },
-      { time: '2017-03-11 16:00', events: [] },
-      {
-        time: '2017-03-11 17:00',
-        events: [
-          {
-            title: 'Android and iOS Workshop',
-            location: 'ECS 124',
-          },
-        ],
-      },
-      { time: '2017-03-11 18:00', events: [] },
-      {
-        time: '2017-03-11 19:00',
+        time: '2018-03-10 19:00',
         events: [
           {
             title: 'Dinner',
@@ -91,20 +75,12 @@ export default class Schedule extends Component {
           },
         ],
       },
-      { time: '2017-03-11 20:00', events: [] },
+      { time: '2018-03-10 20:00', events: [] },
+      { time: '2018-03-10 21:00', events: [] },
+      { time: '2018-03-10 22:00', events: [] },
+      { time: '2018-03-10 23:00', events: [] },
       {
-        time: '2017-03-11 21:00',
-        events: [
-          {
-            title: 'Cup Stacking',
-            location: 'ECS 124',
-          },
-        ],
-      },
-      { time: '2017-03-11 22:00', events: [] },
-      { time: '2017-03-11 23:00', events: [] },
-      {
-        time: '2017-03-12 00:00',
+        time: '2018-03-11 00:00',
         events: [
           {
             title: 'Midnight Snack',
@@ -112,28 +88,32 @@ export default class Schedule extends Component {
           },
         ],
       },
-      { time: '2017-03-12 01:00', events: [] },
-      { time: '2017-03-12 02:00', events: [] },
-      { time: '2017-03-12 03:00', events: [] },
-      { time: '2017-03-12 04:00', events: [] },
-      { time: '2017-03-12 05:00', events: [] },
-      { time: '2017-03-12 06:00', events: [] },
-      { time: '2017-03-12 07:00', events: [] },
-      { time: '2017-03-12 08:00', events: [] },
+      { time: '2018-03-11 01:00', events: [] },
+      { time: '2018-03-11 02:00', events: [] },
+      { time: '2018-03-11 03:00', events: [] },
+      { time: '2018-03-11 04:00', events: [] },
+      { time: '2018-03-11 05:00', events: [] },
+      { time: '2018-03-11 06:00', events: [] },
+      { time: '2018-03-11 07:00', events: [] },
       {
-        time: '2017-03-12 09:00',
+        time: '2018-03-11 08:00',
         events: [
           {
             title: 'Breakfast',
             location: 'Atrium',
-          },
+          }
+        ]
+      },
+      {
+        time: '2018-03-11 09:00',
+        events: [
           {
             title: 'Hacking Ends',
-          },
+          }
         ],
       },
       {
-        time: '2017-03-12 10:00',
+        time: '2018-03-11 10:00',
         events: [
           {
             title: 'Closing Ceremonies',
@@ -141,8 +121,8 @@ export default class Schedule extends Component {
           },
         ],
       },
-      { time: '2017-03-12 11:00', events: [] },
-      { time: '2017-03-12 12:00', events: [] },
+      { time: '2018-03-11 11:00', events: [] },
+      { time: '2018-03-11 12:00', events: [] },
     ];
     return (
       <section id="schedule">
