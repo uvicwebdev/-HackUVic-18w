@@ -27,22 +27,7 @@ export default class Sponsors extends Component {
   render() {
     const sponsors = [
       {
-        title: 'Partners',
-        orgs: [
-          {
-            title: 'University of Victoria',
-            href: 'https://www.uvic.ca/',
-            image: uvicLogo,
-          },
-          {
-            title: 'Major League Hacking',
-            href: 'https://mlh.io/',
-            image: mlhLogo,
-          }
-        ],
-      },
-      {
-        title: 'Sponsors',
+        title: '',
         orgs: [
           {
             title: 'Send With Us',
@@ -68,7 +53,22 @@ export default class Sponsors extends Component {
             title: 'Launchaco',
             href: 'https://launchaco.com/',
             image: launchacoLogo,
-          }
+          },
+        ],
+      },
+      {
+        title: 'Partners',
+        orgs: [
+          {
+            title: 'University of Victoria',
+            href: 'https://www.uvic.ca/',
+            image: uvicLogo,
+          },
+          {
+            title: 'Major League Hacking',
+            href: 'https://mlh.io/',
+            image: mlhLogo,
+          },
         ],
       },
     ];
