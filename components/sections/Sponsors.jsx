@@ -46,7 +46,7 @@ export default class Sponsors extends Component {
           },
           {
             title: 'Starfish Medical',
-            href: 'https://mlh.io/',
+            href: 'https://starfishmedical.com/',
             image: starfishLogo,
           },
           {
