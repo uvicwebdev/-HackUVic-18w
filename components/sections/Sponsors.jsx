@@ -4,7 +4,7 @@ import Icon from 'parts/Icon';
 
 import mlhLogo from 'img/Sponsors/mlh-logo.svg';
 import uvicLogo from 'img/Sponsors/uvic-logo.svg';
-import freshworksLogo from 'img/Sponsors/freshworks-logo.svg';
+import freshworksLogo from 'img/Sponsors/freshworks-logo.png';
 import swuLogo from 'img/Sponsors/sendwithus-logo.svg';
 import starfishLogo from 'img/Sponsors/starfish-logo.svg';
 import workdayLogo from 'img/Sponsors/workday-logo.svg';
@@ -41,7 +41,7 @@ export default class Sponsors extends Component {
           },
           {
             title: 'Freshworks',
-            href: 'https://freshworks.com/',
+            href: 'https://freshworks.io/',
             image: freshworksLogo,
           },
           {
