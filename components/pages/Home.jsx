@@ -65,6 +65,11 @@ export default class Home extends Component {
                       <Icon name="ticket" size={1.3} /> Sign Up with MyMLH
                     </button>
                   </div>
+                  <div className="col-12" style={{paddingTop: 18}}>
+                    <a className="btn btn-hero btn-fat" href="https://hackuvic-18w.devpost.com/">
+                      <Icon name="ticket" size={1.3} /> Register your team on Devpost
+                    </a>
+                  </div>
                   <div className="col-12">
                     <a className="btn btn-link" href="https://hackuvic-17w.devpost.com/submissions" target="_blank" rel="noopener noreferrer">
                       View Last Year's Projects
