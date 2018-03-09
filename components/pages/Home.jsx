@@ -60,11 +60,6 @@ export default class Home extends Component {
                 </small>
                 <br /><br /><br /><br />
                 <div className="columns flex-center">
-                  <div className="col-12">
-                    <button className="btn btn-hero btn-fat" onClick={this.openSignUp}>
-                      <Icon name="ticket" size={1.3} /> Sign Up with MyMLH
-                    </button>
-                  </div>
                   <div className="col-12" style={{paddingTop: 18}}>
                     <a className="btn btn-hero btn-fat" href="https://hackuvic-18w.devpost.com/">
                       <Icon name="ticket" size={1.3} /> Register your team on Devpost
