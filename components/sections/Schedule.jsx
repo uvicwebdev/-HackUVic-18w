@@ -30,7 +30,7 @@ export default class Schedule extends Component {
         events: [
           {
             title: 'Opening Ceremonies',
-            location: 'ECS 125',
+            location: 'ECS 123',
           },
         ],
       },
@@ -40,7 +40,7 @@ export default class Schedule extends Component {
         events: [
           {
             title: 'Hacking Starts',
-          }
+          },
         ],
       },
       { time: '2018-03-10 12:00', events: [] },
@@ -50,7 +50,7 @@ export default class Schedule extends Component {
           {
             title: 'Lunch',
             location: 'Atrium',
-          }
+          },
         ],
       },
       {
@@ -58,9 +58,9 @@ export default class Schedule extends Component {
         events: [
           {
             title: 'Hackthon 101',
-            location: 'ECS 124',
-          }
-        ]
+            location: 'ECS 130',
+          },
+        ],
       },
       { time: '2018-03-10 15:00', events: [] },
       { time: '2018-03-10 16:00', events: [] },
@@ -101,15 +101,15 @@ export default class Schedule extends Component {
           {
             title: 'Breakfast',
             location: 'Atrium',
-          }
-        ]
+          },
+        ],
       },
       {
         time: '2018-03-11 09:00',
         events: [
           {
             title: 'Hacking Ends',
-          }
+          },
         ],
       },
       {
@@ -117,7 +117,7 @@ export default class Schedule extends Component {
         events: [
           {
             title: 'Closing Ceremonies',
-            location: 'ECS 125',
+            location: 'ECS 123',
           },
         ],
       },
