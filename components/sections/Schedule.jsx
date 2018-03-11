@@ -89,7 +89,15 @@ export default class Schedule extends Component {
         ],
       },
       { time: '2018-03-11 01:00', events: [] },
-      { time: '2018-03-11 02:00', events: [] },
+      {
+        time: '2018-03-11 02:00',
+        events: [
+          {
+            title: 'Cup Stacking',
+            location: 'Atrium',
+          },
+        ],
+      },
       { time: '2018-03-11 03:00', events: [] },
       { time: '2018-03-11 04:00', events: [] },
       { time: '2018-03-11 05:00', events: [] },
