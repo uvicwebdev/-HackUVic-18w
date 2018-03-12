@@ -62,7 +62,7 @@ export default class Home extends Component {
                 <div className="columns flex-center">
                   <div className="col-12" style={{paddingTop: 18}}>
                     <a className="btn btn-hero btn-fat" href="https://hackuvic-18w.devpost.com/">
-                      <Icon name="ticket" size={1.3} /> Register your team on Devpost
+                      <Icon name="code-outline" size={1.3} /> See the projects on Devpost
                     </a>
                   </div>
                   <div className="col-12">
